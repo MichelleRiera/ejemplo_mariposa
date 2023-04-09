@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'> 
+	<title>Video de fondo en HTML</title>
+  <link rel="stylesheet" href="styles.css">
+
+	<style>
+		/* Establece el video de fondo para cubrir toda la página */
+		video {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			transform: translateX(-50%) translateY(-50%);
+			z-index: -1;
+		}
+    <div id="background-image"></div>
+}
+	</style>
+</head>
+<body>
+
+  <video autoplay muted loop>
+		<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+		<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+		Tu navegador no admite la etiqueta de video.
+	</video>
+
+	<div class="content">
+		
+    <h3 class="text1">Selecciona un color:</h3>
+        <div class="color-select">
+            <div id="red"></div>
+            <div id="amarillo"></div>
+            <div id="verde"></div>
+        </div>
+        <div class="images">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/556c4403-5139-4dca-aa7d-a04e47535a7a/d4ofx6e-78a9ed88-8282-4e3d-b4ad-7b7b2fec1612.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NmM0NDAzLTUxMzktNGRjYS1hYTdkLWEwNGU0NzUzNWE3YVwvZDRvZng2ZS03OGE5ZWQ4OC04MjgyLTRlM2QtYjRhZC03YjdiMmZlYzE2MTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UkgPqo1JFWn2AoHVLcJZ3TPU9aME54FudetygG9MxN8" id="imgchange" alt="mariposa.jpg" width="200px" height="200px">
+        </div>
+	</div>
+<script src="script.js"></script>
+  
+</body>
+</html>
+
